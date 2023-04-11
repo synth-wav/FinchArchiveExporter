@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinchArchiveExporter", "FinchArchiveExporter.csproj", "{A5D81350-3C65-4485-8865-C73B5D366C26}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5D81350-3C65-4485-8865-C73B5D366C26}.Debug|x86.ActiveCfg = Debug|x86
+		{A5D81350-3C65-4485-8865-C73B5D366C26}.Debug|x86.Build.0 = Debug|x86
+		{A5D81350-3C65-4485-8865-C73B5D366C26}.Release|x86.ActiveCfg = Release|x86
+		{A5D81350-3C65-4485-8865-C73B5D366C26}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DC4F598-80A4-4B94-87DA-8D2AF79AB431}
+	EndGlobalSection
+EndGlobal
