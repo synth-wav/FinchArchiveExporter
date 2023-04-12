@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.CodeDom;
 using System.Text.RegularExpressions;
+using System.Threading;
+using System.Diagnostics;
 
 namespace FinchArchiveExporter {
     class ParseArchive {
@@ -15,6 +17,8 @@ namespace FinchArchiveExporter {
         public const String BULLET_TYPE_2 = "\"bullet_type\":2";
         static void Main(string[] args) {
             String fileName;
+            Stopwatch stopwatch = new Stopwatch();
+            stopwatch.Start();
             List<Entry> entries = new List<Entry>();
             if (args.Length == 0 || args.Length > 1) {
                 Console.WriteLine("Usage: FinchArchiveParser inputFile.json");
@@ -138,6 +142,9 @@ namespace FinchArchiveExporter {
                     }
                 }
             }
+            Console.WriteLine("Exported {0} entries in {1} seconds.", entries.Count, stopwatch.Elapsed.TotalSeconds);
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
             System.Environment.Exit(0);
         }
     }
