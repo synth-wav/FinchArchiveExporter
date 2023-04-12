@@ -70,7 +70,7 @@ namespace FinchArchiveExporter {
                     if (c == '!')
                     {
                         //Console.WriteLine("{0}, {1}", entryBody.Length - 1, charCount);
-                        if (charCount != entryBody.Length && charCount != entryBody.Length - 1 && entryBody[charCount + 1] != ' ')
+                        if (charCount != entryBody.Length && charCount != entryBody.Length - 1 && !Char.IsWhiteSpace(entryBody[charCount + 1]))
                         {
                             entryBody = entryBody.Remove(charCount, 1);
                             charCount--;
